@@ -1,4 +1,86 @@
-.fakeimg {
-    height: 200px;
-    background: #eee;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+}
+
+.header img {
+  padding-right: 1em;
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.header h1,
+.header p {
+  flex-direction: column;
+  text-align: left;
+}
+
+.container-fluid {
+  display: flex;
+  width: 15%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar-nav ul {
+  position: relative;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nav-item li {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item a {
+  display: block;
+  margin: auto;
+}
+
+.nav-link {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.nav-item a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.carousel {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-inner {
+  max-width: 800px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .header img {
+    max-width: 20%;
   }
+
+.navbar-nav {
+  flex-direction: column;
+}
+
+  .carousel-item img {
+    max-width: 100%;
+  }
+}
